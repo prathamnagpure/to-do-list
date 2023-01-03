@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+}
+
+#list{
+    text-align: start;
+    color: lightgray;
+}
+
+#text-input{
+    width: 1000px;
+    background-color: gray;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+#submit-btn{
+    border: 1px solid black;
+    background-color: darkblue;
+    color: skyblue;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#submit-btn:hover{
+    color: darkblue;
+    background-color: skyblue;
+}
+
+#clear-all-btn{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: maroon;
+    color: lightcoral;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+#clear-all-btn:hover{
+    background-color: lightcoral;
+    color: maroon;
+}
+
+#title{
+    color: gray;
+}
