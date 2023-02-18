@@ -5,6 +5,7 @@ const text_input = document.getElementById("text-input");
 const mode_btn = document.getElementById("mode-btn");
 const body = document.querySelector("body");
 const title = document.getElementById("title");
+
 let dark_mode =  true
 
 text_input.addEventListener("keypress", function(event) {
@@ -41,4 +42,24 @@ mode_btn.addEventListener("click",function(){
         dark_mode = true
     }
     
+});
+
+mode_btn.addEventListener("mouseover", function(){
+    if(dark_mode){
+        mode_btn.style.backgroundColor = "lightblue";
+        mode_btn.style.color = "darkslategray";
+    }else{
+        mode_btn.style.backgroundColor = "darkslategray";
+        mode_btn.style.color = "lightblue";
+    }
+});
+
+mode_btn.addEventListener("mouseout", function(){
+    if(dark_mode){
+        mode_btn.style.backgroundColor = "darkslategray";
+        mode_btn.style.color = "lightblue";
+    }else{
+        mode_btn.style.backgroundColor = "lightblue";
+        mode_btn.style.color = "darkslategray";
+    }
 });
