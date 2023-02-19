@@ -15,6 +15,9 @@ text_input.addEventListener("keypress", function(event) {
     }
 });
 
+list.addEventListener('click', function(ev) {
+  ev.target.classList.toggle('checked');
+});
 
 submit_btn.addEventListener("click", function(){
     list.innerHTML += `<li>${text_input.value}</li>`;
@@ -41,7 +44,6 @@ mode_btn.addEventListener("click",function(){
         text_input.style.backgroundColor = "gray";
         dark_mode = true
     }
-    
 });
 
 mode_btn.addEventListener("mouseover", function(){

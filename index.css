@@ -58,3 +58,7 @@ body{
     margin: 10px;
     border-radius: 20px;
 }
+
+.checked{
+    text-decoration: line-through;
+}
